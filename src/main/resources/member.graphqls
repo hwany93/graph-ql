@@ -1,0 +1,22 @@
+schema {
+    query : Query
+    mutation: Mutation
+}
+
+type Query {
+    members(count: Int, offset: Int) : [Member]
+    member(id: Int): Member
+}
+
+type Mutation {
+    register(identify : String) : Member
+}
+
+type Member {
+    memberIndex : Int
+    identify : String
+    password : String
+    name : String
+    gender : String
+    phoneNumber : String
+}

@@ -1,3 +1,22 @@
+spring:
+  ##############################################
+  ####### JDBC DATASOURCE
+  ##############################################
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/graph-ql?serverTimezone=Asia/Seoul&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: '!@dnlaptm'
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: false
+    database: mysql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDB53Dialect
+
 graphql:
   spqr:
     gui:
