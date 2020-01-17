@@ -1,6 +1,6 @@
 package kr.ngbr.graphql.controller;
 
-import kr.ngbr.graphql.domain.member.MemberQuery;
+import kr.ngbr.graphql.service.member.MemberQuery;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

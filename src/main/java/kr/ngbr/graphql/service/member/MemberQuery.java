@@ -1,12 +1,11 @@
-package kr.ngbr.graphql.domain.member;
+package kr.ngbr.graphql.service.member;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import io.leangen.graphql.annotations.GraphQLQuery;
+import kr.ngbr.graphql.domain.member.Member;
+import kr.ngbr.graphql.domain.member.MemberRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.awt.print.Pageable;
 import java.util.List;
 import java.util.Optional;
 

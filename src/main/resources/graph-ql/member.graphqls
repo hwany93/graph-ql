@@ -5,18 +5,17 @@ schema {
 
 type Query {
     members(count: Int, offset: Int) : [Member]
-    member(id: Int): Member
+    member(index: Int): Member
 }
 
 type Mutation {
-    register(identify : String) : Member
+    register(id : String, password: String, name: String, phoneNumber: String, gender: String) : Member
 }
 
 type Member {
     memberIndex : Int
+    password: String
     identify : String
-    password : String
     name : String
     gender : String
-    phoneNumber : String
 }
